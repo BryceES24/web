@@ -60,13 +60,94 @@
 			});
 			</script>
 			<iframe src="https://www.bing.com"> 
-			
+			<img src="D:\mp3.html\In[Perfektion] - Tech-No-Logic.mp3"
+			 <iframe src=<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49149.03617931156!2d-91.77001357574646!3d39.65388322521369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87dd983f9ef56497%3A0xe04c1dd5b28456b9!2sMonroe%20City%2C%20MO%2063456!5e0!3m2!1sen!2sus!4v1675918534504!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+			<canvas id="canvas"></canvas>
+let canvas = document.getElementById("canvas");
+
+let context = canvas.getContext("2d");
+
+window_width = window.innerWidth;
+window_height = window.innerHeight;
+
+canvas.width = window_width;
+canvas.height = window_height;
+canvas.style.background = "#ff8";
+
+var hit_counter = 0;
+
+class Circle {
+constructor(xpos, ypos, radius, speed, color, text) {
+
+this.position_x = xpos;
+this.position_y = ypos;
+
+this.radius = radius;
+
+this.speed = speed;
+
+this.dx = 1 * this.speed;
+this.dy = 1 * this.speed;
+
+this.text = text;
+
+this.color = color;
+}
+
+draw(context) {
+context.beginPath();
+context.strokeStyle = this.color;
+context.fillText(this.text, this.position_x, this.position_y);
+context.textAlign = "center";
+context.textBaseline = "middle"
+context.font = "30px Arial";
+context.lineWidth = 5;
+context.arc(this.position_x, this.position_y, this.radius, 0, Math.PI * 2);
+context.stroke();
+context.closePath();
+}
+
+update() {
+
+this.draw(context);
+
+if ( (this.position_x + this.radius) > window_width ) {
+this.dx = -this.dx;
+hit_counter++;
+}
+
+if ( (this.position_x - this.radius) < 0 ) { this.dx=-this.dx; hit_counter++; } if ( (this.position_y - this.radius) < 0 ) { this.dy=-this.dy; hit_counter++; } if ( (this.position_y + this.radius)> window_height ) {
+  this.dy = -this.dy;
+  hit_counter++;
+  }
+
+  this.position_x += this.dx;
+  this.position_y += this.dy;
+
+  }
+  }
+
+  let getDistance = function(xpos1, ypos1, xpos2, ypos2) {
+  var result = Math.sqrt(Math.pow(xpos2-xpos1, 2) + Math.pow(ypos2-ypos1, 2));
+  return result;
+  }
+
+  let randomNumber = function(min, max) {
+  var result = Math.random() * (max - min) + min;
+  return result;
+  }
+
+  var all_circles = [];
+
+  for (var i = 0; i < 10; i++) { var radius=50; var random_x=randomNumber(radius, (window_width - radius)); var random_y=randomNumber(radius, (window_height - radius)); for( var a=0; a < all_circles.length; a++) { if ( (getDistance(random_x, random_y, all_circles[a].xpos, all_circles[a].ypos) - radius + all_circles[a].radius < 0) ) { random_x=randomNumber(radius, (window_width-radius)); random_y=randomNumber(radius, (window_height-radius)); } a=all_circles.length; } let my_circle=new Circle(random_x, random_y, radius, 2, 'Black' , 'A' ); all_circles.push(my_circle); } let updateCircle=function() { requestAnimationFrame(updateCircle); context.clearRect(0, 0, window_width, window_height); all_circles.forEach(element=> {
+    element.update();
+    })
+    }
+
+    updateCircle();	
 	 </body>
-	<img src="D:\mp3.html\In[Perfektion] - Tech-No-Logic.mp3"
 	
-	
-	
-	
-	
+	     
+	  
 	
 </html>
