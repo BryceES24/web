@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <!-- CSS only -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css"/>
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">Florentino's Flicks</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My Works</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>            
+              </div>
+            </div>
+          </nav>
+          <!-- Navbar End -->
+
+          <!-- Hero section -->
+          <section id="hero">
+              <div class="container">
+                  <div class="row">
+                      <div class="col">
+                          <h1>Welcome to the Shining Starters.<br>Your Cast</h1>
+                          <p>Jan The Man-Jan is a sharpshooter known all around the Hannibal LaGrange campus and just achieved over 1,000 points!</p>
+                          <button type="button" class="btn btn-dark btn-lg">Click here to learn how to shoot like Jan</button>
+                       </div>
+                       <div class="col">
+                           <img src="https://hlgtrojans.com/images/2022/10/28/MBB0_oCiDw.jpg" alt="">
+                       </div>
+                  </div>
+                  <div class="row cards">
+                      <div class="col-md-4 d-flex justify-content-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- here is where they add the ICON -->
+                                <img src="" alt="A smiling Jan" class="icon">
+                                <h5 class="card-title">PG NE</h5>
+                                <p class="card-text">Ne is the point-gaurd that can do it all, just get out the way and give him the ball!</p>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4 d-flex justify-content-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- here is where they add the ICON -->
+                                <img src="data:image/jpeg;base64,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" alt="..." class="icon">
+                                <h5 class="card-title">Image of Nehemiah Baker about to get a bucket</h5>
+                                <p class="card-text"> Yours Truly.</p>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4 d-flex justify-content-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- here is where they add the ICON -->
+                                <img src="https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/hlgtrojans.com/images/2023/1/17/HLGU_MENS_BASKETBALL_vs__MVC111222FlorentinoGutierrez__578_.jpg" alt="..." class="icon">
+                                <h5 class="card-title">This is an image of me definitely not missing.</h5>
+                                <p class="card-text">Jacob Spin-Move Staton.</p>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+         <!-- Hero section ends here -->
+
+           <!-- About Us -->
+          <section id="about-us">
+              <div class="container">
+                  <div class="row align-items-center">
+                      <div class="col">
+                          <!-- another image can be inserted here -->
+                          <img src="https://hlgtrojans.com/images/2022/10/28/MBB2_mxTo9.jpg" alt="..." class="img-fluid"/>
+                      </div>
+                      <div class="col">
+                          <h1>About </h1>
+                          <p>This is only 4/5 of the Shining Starters and you might be wondering why? That is mostly due to the reason that there were lots of lineup changes throghout the season due to injuries. </p>
+                          <p>But that gives you the perfect opportunity to become a shining starter and prove yourself on the court! </p>
+                          <button type="button" class="btn btn-dark btn-lg">Join the Shining Starters here!</button>
+                    </div>
+                  </div>
+              </div>
+          </section>
+          <!-- End of About Us -->
+
+          <!-- Projects section -->
+          <div class="container">
+              <div class="row align-items-center projects">
+                  <div class="col"> 
+                    <h1>Our Project</h1>
+                    <p>The main focus of our project is to get you off Bench Mafia and become a Shining Starter so that your name can be known throughout ALL of the Tri-States.</p>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col">
+                        <div class="card mb-3">
+                            <img src="https://hlgtrojans.com/images/2022/10/28/HLGU-MBB-22_8pd4r.jpg?width=1600" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Image of a lot of buckets.</h5>
+                              <p class="card-text">.</p>
+                              <p class="card-text"><small class="text-muted">Some useful info</small></p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-3">
+                            <img src="https://hlgtrojans.com/images/2022/1/14/Kaleib_layup.jpg" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Khalib Becton</h5>
+                              <p class="card-text">This is an image of one of HLG's finest KB getting a bucket.</p>
+                              <p class="card-text"><small class="text-muted">Some useful info</small></p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-3">
+                            
+                            <div class="card-body">
+                              
+                              <p class="card-text"><small class="text-muted">Some useful info</small></p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <!-- End of Projects Section -->
+
+          <!-- Contact Section -->
+          <section id="contact">
+            <div class="container">
+                <div class="row align-items-center projects">
+                    <div class="col"> 
+                      <h1>Contact me</h1>
+                      <p> Email-ShiningStars@gmail.com.</p>
+                    </div>
+                </div>
+            </div>
+          </section>
+          <!-- End of contact section -->
+
+          <!-- JavaScript Bundle with Popper -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        </body>
