@@ -1,153 +1,161 @@
-<!DOCTYPE>
-<html>
-  <head>
-    <title>
-	Florentino's Flicks
-	</title>
-   </head>
-   <body>
-  <h1>Florentino's Flicks</h1>
- <img src="/Users/bstar/Desktop/img/bryce" alt="Bryce Stark"
-	<form>
-	   <input type="text" name="email" placeholder="Type in your email here">
-	   </form>
-	</body>
-  <body>
-   <header>
-   <nav>
-     <ul>
-	     <li>Templates</li>
-	     <li>Sports</li>
-	     <li>About Me<li/>
-     </ul>
-	   </nav>
-<header>
-	<artile>
-	<section> </section>	
-	</article>
-	<aside>
-		<h1>News</h1>
-	Contact: Florentino@gmail.com
-	</aside>
-	<footer>
-	@Florentino's Flicks
-	</footer> 
-		
-     <p> 
-	     Florentino's website for photography for all occasions.
-	 </p>
-	<h2> Options for image frames.</h2>
-	
-	<table bgcolor="black" width="300">
-		
-		<tr bgcolor="blue" align="center">
-		<th width="100">Potriat</th>
-		<th width="100">Landscape</th>
-		<th width="100">Custom</th>
-	</tr>
-	<tr bgcolor="lightblue" align="center">
-	<td>Prices</td>
-	<td>$49.99</td>
-	<td>$59.99</td>
-	</tr>
-	<video src=
-		<button id="btn">click me</button>
-		<script>
-			var button= document.getElementById("btn");
-			
-				button.addEventListener("click",function(){
-				alert("You just clicked me");
-			});
-			</script>
-			<iframe src="https://www.bing.com"> 
-			<img src="D:\mp3.html\In[Perfektion] - Tech-No-Logic.mp3"
-			 <iframe src=<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49149.03617931156!2d-91.77001357574646!3d39.65388322521369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87dd983f9ef56497%3A0xe04c1dd5b28456b9!2sMonroe%20City%2C%20MO%2063456!5e0!3m2!1sen!2sus!4v1675918534504!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-			<canvas id="canvas"></canvas>
-let canvas = document.getElementById("canvas");
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <!-- CSS only -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css"/>
+    </head>
+    <body>
 
-let context = canvas.getContext("2d");
+        <!-- Navbar -->
+        <nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">Florentino's Flicks</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My Works</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>            
+              </div>
+            </div>
+          </nav>
+          <!-- Navbar End -->
 
-window_width = window.innerWidth;
-window_height = window.innerHeight;
+          <!-- Hero section -->
+          <section id="hero">
+              <div class="container">
+                  <div class="row">
+                      <div class="col">
+                          <h1>Welcome to the Shining Starters.<br>Your Cast</h1>
+                          <p>Jan The Man-Jan is a sharpshooter known all around the Hannibal LaGrange campus and just achieved over 1,000 points!</p>
+                          <button type="button" class="btn btn-dark btn-lg">Click here to learn how to shoot like Jan</button>
+                       </div>
+                       <div class="col">
+                           <img src="https://hlgtrojans.com/images/2022/10/28/MBB0_oCiDw.jpg" alt="">
+                       </div>
+                  </div>
+                  <div class="row cards">
+                      <div class="col-md-4 d-flex justify-content-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- here is where they add the ICON -->
+                                <img src="" alt="" class="icon">
+                                <h5 class="card-title">PG NE</h5>
+                                <p class="card-text">Ne is the point-gaurd that can do it all, just get out the way and give him the ball!</p>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4 d-flex justify-content-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- here is where they add the ICON -->
+                                <img src="https://hlgtrojans.com/images/2022/10/28/MBB10_uUrYW.jpg" alt="..." class="icon">
+                                <h5 class="card-title">Image of Nehemiah Baker, AKA Point God</h5>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4 d-flex justify-content-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- here is where they add the ICON -->
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+         <!-- Hero section ends here -->
 
-canvas.width = window_width;
-canvas.height = window_height;
-canvas.style.background = "#ff8";
+           <!-- About Us -->
+          <section id="about-us">
+              <div class="container">
+                  <div class="row align-items-center">
+                      <div class="col">
+                          <!-- another image can be inserted here -->
+                          <img src="https://hlgtrojans.com/images/2022/10/28/MBB2_mxTo9.jpg" alt="..." class="img-fluid"/>
+                      </div>
+                      <div class="col">
+                          <h1>About Jacob Spin Move Staton </h1>
+                          <p>Jacob Staton is one of the nicest players you will ever see on the basketball court! From his signature spin to his unstoppable midrange game, Jacob Staton is a player you aspire to be like. </p>
+                          <button type="button" class="btn btn-dark btn-lg">Join the Shining Starters here!</button>
+                    </div>
+                  </div>
+              </div>
+          </section>
+          <!-- End of About Us -->
 
-var hit_counter = 0;
+          <!-- Projects section -->
+          <div class="container">
+              <div class="row align-items-center projects">
+                  <div class="col"> 
+                    <h1>Our Project</h1>
+                    <p>The main focus of our project is to get you off Bench Mafia and become a Shining Starter so that your name can be known throughout ALL of the Tri-States.</p>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col">
+                        <div class="card mb-3">
+                            <img src="https://hlgtrojans.com/images/2022/10/28/HLGU-MBB-22_8pd4r.jpg?width=1600" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Image of a lot of buckets.</h5>
+                              <p class="card-text">.</p>
+                              <p class="card-text"><small class="text-muted">Some useful info</small></p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-3">
+                            <img src="https://hlgtrojans.com/images/2022/1/14/Kaleib_layup.jpg" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Khalib Becton</h5>
+                              <p class="card-text">This is an image of one of HLG's finest, KB getting a bucket.</p>
+                              <p class="card-text"><small class="text-muted">Some useful info</small></p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-3">
+                            
+                            <div class="card-body">
+                              
+                              <p class="card-text"><small class="text-muted">Some useful info</small></p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <!-- End of Projects Section -->
 
-class Circle {
-constructor(xpos, ypos, radius, speed, color, text) {
+          <!-- Contact Section -->
+          <section id="contact">
+            <div class="container">
+                <div class="row align-items-center projects">
+                    <div class="col"> 
+                      <h1>Contact me</h1>
+                      <p> Email-ShiningStars@gmail.com.</p>
+                    </div>
+                </div>
+            </div>
+          </section>
+          <!-- End of contact section -->
 
-this.position_x = xpos;
-this.position_y = ypos;
-
-this.radius = radius;
-
-this.speed = speed;
-
-this.dx = 1 * this.speed;
-this.dy = 1 * this.speed;
-
-this.text = text;
-
-this.color = color;
-}
-
-draw(context) {
-context.beginPath();
-context.strokeStyle = this.color;
-context.fillText(this.text, this.position_x, this.position_y);
-context.textAlign = "center";
-context.textBaseline = "middle"
-context.font = "30px Arial";
-context.lineWidth = 5;
-context.arc(this.position_x, this.position_y, this.radius, 0, Math.PI * 2);
-context.stroke();
-context.closePath();
-}
-
-update() {
-
-this.draw(context);
-
-if ( (this.position_x + this.radius) > window_width ) {
-this.dx = -this.dx;
-hit_counter++;
-}
-
-if ( (this.position_x - this.radius) < 0 ) { this.dx=-this.dx; hit_counter++; } if ( (this.position_y - this.radius) < 0 ) { this.dy=-this.dy; hit_counter++; } if ( (this.position_y + this.radius)> window_height ) {
-  this.dy = -this.dy;
-  hit_counter++;
-  }
-
-  this.position_x += this.dx;
-  this.position_y += this.dy;
-
-  }
-  }
-
-  let getDistance = function(xpos1, ypos1, xpos2, ypos2) {
-  var result = Math.sqrt(Math.pow(xpos2-xpos1, 2) + Math.pow(ypos2-ypos1, 2));
-  return result;
-  }
-
-  let randomNumber = function(min, max) {
-  var result = Math.random() * (max - min) + min;
-  return result;
-  }
-
-  var all_circles = [];
-
-  for (var i = 0; i < 10; i++) { var radius=50; var random_x=randomNumber(radius, (window_width - radius)); var random_y=randomNumber(radius, (window_height - radius)); for( var a=0; a < all_circles.length; a++) { if ( (getDistance(random_x, random_y, all_circles[a].xpos, all_circles[a].ypos) - radius + all_circles[a].radius < 0) ) { random_x=randomNumber(radius, (window_width-radius)); random_y=randomNumber(radius, (window_height-radius)); } a=all_circles.length; } let my_circle=new Circle(random_x, random_y, radius, 2, 'Black' , 'A' ); all_circles.push(my_circle); } let updateCircle=function() { requestAnimationFrame(updateCircle); context.clearRect(0, 0, window_width, window_height); all_circles.forEach(element=> {
-    element.update();
-    })
-    }
-
-    updateCircle();	
-	 </body>
-	
-	     
-	  
-	
-</html>
+          <!-- JavaScript Bundle with Popper -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        </body>
